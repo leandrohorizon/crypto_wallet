@@ -316,17 +316,48 @@
           1,
           1,
           null,
+          1,
+          null,
+          null,
           null
         ]
       },
       "/home/leanddro/workspace/ruby-udemy/modulo_03/crypto_wallet/app/helpers/application_helper.rb": {
         "lines": [
           1,
+          1,
+          0,
+          null,
           null
         ]
       },
       "/home/leanddro/workspace/ruby-udemy/modulo_03/crypto_wallet/app/helpers/coins_helper.rb": {
         "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/leanddro/workspace/ruby-udemy/modulo_03/crypto_wallet/app/helpers/welcome_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/leanddro/workspace/ruby-udemy/modulo_03/crypto_wallet/spec/helpers/welcome_helper_spec.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
           1,
           null
         ]
@@ -482,6 +513,21 @@
           1,
           0,
           0,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/leanddro/workspace/ruby-udemy/modulo_03/crypto_wallet/spec/requests/welcome_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          0,
+          null,
           null,
           null,
           null
@@ -658,9 +704,9 @@
           null,
           1,
           1,
-          1,
-          1,
-          1,
+          0,
+          0,
+          0,
           null,
           null
         ]
@@ -708,14 +754,23 @@
           null,
           1,
           1,
-          1,
-          1,
+          0,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
+      "/home/leanddro/workspace/ruby-udemy/modulo_03/crypto_wallet/spec/views/welcome/index.html.erb_spec.rb": {
+        "lines": [
           1,
           null,
+          1,
+          1,
           null
         ]
       }
     },
-    "timestamp": 1621103861
+    "timestamp": 1621115691
   }
 }
