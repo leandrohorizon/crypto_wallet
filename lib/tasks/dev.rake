@@ -9,7 +9,7 @@ namespace :dev do
     show_spinner('dropping database', spinners) { `rails db:drop` }
     show_spinner('creating database', spinners) { `rails db:create` }
     show_spinner('migrating database', spinners) { `rails db:migrate` }
-    show_spinner('seeding database', spinners) { `rails db:seed` }
+    `rails db:seed`
   end
 
   private
