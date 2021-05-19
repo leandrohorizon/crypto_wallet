@@ -36,13 +36,13 @@ namespace :dev do
     spinners = TTY::Spinner::Multi.new('[:spinner] including mining types', format: :pulse_2)
 
     mining_types = [
-      { name: 'Proof of Work', acronym: 'PoW' },
-      { name: 'Proof of Stake', acronym: 'PoS' },
-      { name: 'Proof of Capacity', acronym: 'PoC' }
+      { description: 'Proof of Work', acronym: 'PoW' },
+      { description: 'Proof of Stake', acronym: 'PoS' },
+      { description: 'Proof of Capacity', acronym: 'PoC' }
     ]
 
     mining_types.each do |mining_type|
-      show_spinner("registering #{mining_type[:name]}", spinners) do
+      show_spinner("registering #{mining_type[:description]}", spinners) do
         MiningType.find_or_create_by!(mining_type)
       end
     end

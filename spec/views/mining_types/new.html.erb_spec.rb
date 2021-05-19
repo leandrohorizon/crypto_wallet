@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe "mining_types/new", type: :view do
   before(:each) do
     assign(:mining_type, MiningType.new(
-      name: "MyString",
+      description: "MyString",
       acronym: "MyString"
     ))
   end
@@ -13,7 +13,7 @@ RSpec.describe "mining_types/new", type: :view do
 
     assert_select "form[action=?][method=?]", mining_types_path, "post" do
 
-      assert_select "input[name=?]", "mining_type[name]"
+      assert_select "input[name=?]", "mining_type[description]"
 
       assert_select "input[name=?]", "mining_type[acronym]"
     end
