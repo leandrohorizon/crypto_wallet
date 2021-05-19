@@ -11,8 +11,8 @@ namespace :dev do
     show_spinner('dropping database', spinners) { `rails db:drop` }
     show_spinner('creating database', spinners) { `rails db:create` }
     show_spinner('migrating database', spinners) { `rails db:migrate` }
-    `rails dev:add_coins`
     `rails dev:add_mine_types`
+    `rails dev:add_coins`
   end
 
   desc 'including coins'
@@ -20,9 +20,9 @@ namespace :dev do
     spinners = TTY::Spinner::Multi.new('[:spinner] including coins', format: :pulse_2)
 
     coins = [
-      { description: 'Bitcoin', acronym: 'BTC',
+      { description: 'Bitcoin', acronym: 'BTC', mining_type: MiningType.all.sample,
         url_image: 'https://s2.coinmarketcap.com/static/img/coins/64x64/1.png' },
-      { description: 'Etherium', acronym: 'ETH',
+      { description: 'Etherium', acronym: 'ETH', mining_type: MiningType.all.sample,
         url_image: 'https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png' }
     ]
 
