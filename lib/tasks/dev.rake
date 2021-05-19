@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 namespace :dev do
   desc 'sets up the development environment'
   task setup: :environment do
