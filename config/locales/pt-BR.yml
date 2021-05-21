@@ -1,9 +1,16 @@
 ---
 pt-BR:
+  actual_locale: Português do Brasil
   links:
     edit: Editar
     show: Mostrar
     destroy: Apagar
+  helpers:
+    submit:
+      create: "Criar %{models}"
+      edit: "Editar %{model}"
+      update: "Atualizar %{model}"
+      destroy: "Apagar %{model}"
   activerecord:
     errors:
       messages:
