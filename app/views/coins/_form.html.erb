@@ -27,6 +27,11 @@
   </div>
 
   <div class="actions">
+    <%= form.select('mining_type_id', @mining_type_options, { include_blank: true }) %>
+
+  </div>
+
+  <div class="actions">
     <%= form.submit %>
   </div>
 <% end %>
